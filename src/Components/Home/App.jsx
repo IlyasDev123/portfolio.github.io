@@ -10,16 +10,17 @@ function App() {
   return (
     <div className="bg-gray-50 text-gray-800">
       <Header />
-      <section className="relative bg-gradient-to-r from-blue-800 via-blue-900 to-gray-900 text-white py-20">
-        <div className="container mx-auto text-center">
-          <h2 className="text-5xl font-bold mb-6 animate-fadeInUp">
-            Building Interactive Web Experiences
-          </h2>
-          <p className="text-xl mb-8 animate-fadeInUp delay-2">
-            Full-Stack Developer | Laravel & JavaScript Frameworks Specialist
-          </p>
-        </div>
-      </section>
+    <section className="relative bg-gradient-to-r from-blue-800 via-blue-900 to-gray-900 text-white py-20">
+      <div className="container mx-auto text-center px-4 sm:px-8">
+        <h2 className="text-5xl font-bold mb-6 animate-fadeInUp">
+          Full-Stack Developer
+        </h2>
+        <p className="text-xl mb-4 animate-fadeInUp delay-2">
+          5+ Years of Experience in Laravel, React, Vue, and AngularJS
+        </p>
+      </div>
+</section>
+
       <About
         title="About"
         id="about"
