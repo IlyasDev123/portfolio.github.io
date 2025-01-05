@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import projectsData from './projects.json'; // Import the JSON file
+import React, { useState, useEffect } from "react";
+import projectsData from "./projects.json"; // Import the JSON file
 
 const Projects = () => {
   const [visibleProjects, setVisibleProjects] = useState(6); // Show 6 projects initially
@@ -7,21 +7,25 @@ const Projects = () => {
 
   // Load more projects when the user scrolls to the bottom
   const handleScroll = () => {
-    const bottom = Math.ceil(window.innerHeight + document.documentElement.scrollTop) === document.documentElement.offsetHeight;
+    const bottom =
+      Math.ceil(window.innerHeight + document.documentElement.scrollTop) ===
+      document.documentElement.offsetHeight;
     if (bottom) {
-      setVisibleProjects(prevVisibleProjects => {
+      setVisibleProjects((prevVisibleProjects) => {
         const newVisibleProjects = prevVisibleProjects + 6;
-        return newVisibleProjects > projectsData.length ? projectsData.length : newVisibleProjects;
+        return newVisibleProjects > projectsData.length
+          ? projectsData.length
+          : newVisibleProjects;
       });
     }
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     // Cleanup event listener on component unmount
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -35,7 +39,7 @@ const Projects = () => {
 
   return (
     <div className="py-16" id="projects">
-      <div className="container mx-auto text-center">
+      <div className="container mx-auto text-center px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold mb-8 text-gray-800">My Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projectsData.slice(0, visibleProjects).map((project, index) => (
@@ -57,7 +61,7 @@ const Projects = () => {
               <div className="flex justify-center space-x-4 mt-4">
                 <button
                   onClick={() => handleMoreDetails(project)}
-                  className="px-4 py-2 text-sm text-white  bg-teal-500 hover:bg-teal-600 rounded shadow-md transition duration-200"
+                  className="px-4 py-2 text-sm text-white bg-teal-500 hover:bg-teal-600 rounded shadow-md transition duration-200"
                 >
                   More Details
                 </button>
@@ -78,7 +82,9 @@ const Projects = () => {
         {visibleProjects < projectsData.length && (
           <div className="text-center mt-8">
             <button
-              onClick={() => setVisibleProjects(prevVisibleProjects => prevVisibleProjects + 6)}
+              onClick={() =>
+                setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + 6)
+              }
               className="px-6 py-2 text-white bg-teal-600 hover:bg-teal-700 rounded-full"
             >
               Load More Projects
@@ -89,8 +95,8 @@ const Projects = () => {
 
       {/* Modal */}
       {selectedProject && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-start pt-20 z-50">
-          <div className="bg-white rounded-lg shadow-lg w-11/12 md:w-2/3 lg:w-1/2 p-6 relative">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-start z-50 overflow-y-auto pt-16 px-4 sm:px-6">
+          <div className="bg-white rounded-lg shadow-lg w-full max-w-lg p-6 relative mx-auto">
             <button
               onClick={handleCloseModal}
               className="absolute top-4 right-4 text-gray-600 hover:text-gray-800"

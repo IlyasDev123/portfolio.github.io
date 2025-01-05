@@ -17,34 +17,18 @@ const Header = () => {
           <ul className="flex space-x-6 text-sm md:text-base font-medium">
             <li>
               <Link
-                to="#about"
+                to="/"
                 className="hover:text-yellow-300 transition duration-300"
               >
-                About
+                Home
               </Link>
             </li>
             <li>
               <Link
-                to="#projects"
+                to="#blog"
                 className="hover:text-yellow-300 transition duration-300"
               >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="#skills"
-                className="hover:text-yellow-300 transition duration-300"
-              >
-                Skills
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="#contact"
-                className="hover:text-yellow-300 transition duration-300"
-              >
-                Contact
+                Blog
               </Link>
             </li>
           </ul>
