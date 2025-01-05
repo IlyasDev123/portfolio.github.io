@@ -1,0 +1,93 @@
+[
+  {
+    "title": "Mailboxing",
+    "description": "A shipping service in Bermuda offering the largest and fastest services. Integrated with APIs like WhatsApp, Mailgun, and Bermuda Customs.",
+    "link": "https://www.mailboxes.bm",
+    "image": "../../images/mailboxing.png",
+    "technologies": ["Laravel","Mysql", "Angular", "Mailgun API", "WhatsApp API", "Customs Integration"],
+   "responsibilities": [
+  "Enhanced and extended existing modules with new features to improve functionality.",
+  "Developed and implemented responsive, user-centric interface designs.",
+  "Optimized database queries and refactored code for improved performance and maintainability across existing modules.",
+  "Upgraded Angular framework from version 8 to 16, ensuring compatibility and leveraging modern features.",
+  "Upgraded Laravel framework from version 8 to 10, maintaining seamless functionality and adhering to the latest development standards."
+]
+
+  },
+  {
+    "title": "Fyfer App",
+    "description": "A fitness app integrating real-time virtual training and health tracking.",
+    "link": "https://fyferapp.com",
+    "image": "../../images/fyfer.png",
+    "technologies": ["Laravel", "OneSignal,", "Stripe", "Socket.IO", "Twilio API"],
+    "responsibilities": [
+        "Designed and optimized database architecture to ensure scalability and efficiency.",
+        "Architected and developed the entire backend API to support application functionalities.",
+        "Engineered RESTful APIs to support core features such as likes, comments, mentions, and user activity feeds.",
+        "Implemented real-time video communication using Twilio APIs and integrated Stripe for seamless and secure payment processing.",
+        "Developed a robust and user-friendly admin panel to manage users, projects, and payment workflows effectively."
+    ]
+
+  },
+  {
+    "title": "Openborders",
+    "description": "A web application aimed at providing resources and support for immigrants and refugees seeking new opportunities.",
+    "link": "https://openborders.io",
+    "image": "../../images/openborders.png",
+    "technologies": ["React", "Mysql", "Laravel", "Stripe", "Acuity", "Zapier"],
+   "responsibilities": [
+        "Designed and developed the frontend using React.js for a seamless user experience.",
+        "Integrated Zapier and Acuity Scheduling to automate booking confirmations and scheduling processes.",
+        "Engineered robust and scalable RESTful APIs to support backend functionality.",
+        "Implemented secure and efficient payment processing using Stripe.",
+        "Developed a robust and user-friendly admin panel to manage users, projects, and payment workflows effectively."
+
+    ]
+  },
+  {
+    "title": "JMK",
+    "description": "A creative story-writing platform where art and storytelling merge.",
+    "link": "https://johnniemaeking.com/",
+    "image": "../../images/jmk.png",
+    "technologies": ["React", "Laravel","Mysql","Twitter API", "Stripe"],
+    "responsibilities": [
+        "Designed and optimized database architecture to ensure scalability and efficiency.",
+        "Architected and developed the entire backend API to support application functionalities.",
+        "Developed a robust and user-friendly admin panel to manage users, projects, and payment workflows effectively."
+    ]
+  },
+  {
+    "title": "P4K",
+    "description": "A dating app focused on personal growth and self-improvement through unique games.",
+    "link": "https://p4kdatingapp.com/",
+    "image": "../../images/p4k.png",
+    "technologies": ["Laravel", "Firebase", "Blade Template"],
+    "responsibilities": [
+        "Designed and optimized database architecture to ensure scalability and efficiency.",
+        "Architected and developed the entire backend API to support application functionalities.",
+        "Developed a robust and user-friendly admin panel to manage users, projects, and payment workflows effectively."
+    ]
+  },
+  {
+    "title": "Layuptrade",
+    "description": "A subscription service for traders who want to invest without closely following the market.",
+    "link": "https://layuptrades.com/",
+    "image": "../../images/layuptrade.png",
+    "technologies": ["PHP", "Jquery","HTML", "CSS"],
+    "responsibilities": [
+        "Designed and developed both backend and frontend architectures from scratch, ensuring seamless integration and optimal performance."
+]
+
+  },
+    {
+    "title": "Excitebrand",
+    "description": "Company website.",
+    "link": "https://excitebrand.com/",
+    "image": "../../images/excitebrand.png",
+    "technologies": ["Larave","Livewire","HTML", "CSS"],
+    "responsibilities": [
+        "Designed and developed both backend and frontend architectures from scratch, ensuring seamless integration and optimal performance."
+]
+
+  }
+]
