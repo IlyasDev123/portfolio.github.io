@@ -69,8 +69,7 @@ const Projects = () => {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                   className="bg-gradient-to-r from-blue-600  via-blue-600 to-blue-700 text-white px-6 py-2 rounded-lg shadow-lg transition duration-300 hover:from-blue-600 hover:via-blue-700 hover:to-blue-800 hover:shadow-xl"
-
+                  className="bg-gradient-to-r from-blue-600  via-blue-600 to-blue-700 text-white px-6 py-2 rounded-lg shadow-lg transition duration-300 hover:from-blue-600 hover:via-blue-700 hover:to-blue-800 hover:shadow-xl"
                 >
                   View Project
                 </a>
@@ -84,7 +83,9 @@ const Projects = () => {
           <div className="text-center mt-8">
             <button
               onClick={() =>
-                setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + 6)
+                setVisibleProjects(
+                  (prevVisibleProjects) => prevVisibleProjects + 6
+                )
               }
               className="px-6 py-2 text-white bg-teal-600 hover:bg-teal-700 rounded-full"
             >
@@ -97,7 +98,7 @@ const Projects = () => {
       {/* Modal */}
       {selectedProject && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-start z-50 overflow-y-auto pt-16 px-4 sm:px-6">
-          <div className="bg-white rounded-lg shadow-lg w-full max-w-lg p-6 relative mx-auto">
+          <div className="bg-white rounded-lg shadow-lg w-full max-w-md sm:max-w-lg lg:max-w-xl p-6 relative mx-auto">
             <button
               onClick={handleCloseModal}
               className="absolute top-4 right-4 text-gray-600 hover:text-gray-800"

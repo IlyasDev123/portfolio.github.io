@@ -59,7 +59,7 @@ const Skills = () => {
           <h3 className="text-3xl font-semibold text-gray-800 mb-8">
             Third-Party APIs & Tools
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {Object.entries(thirdPartyAPIs).map(([category, items]) => (
               <ApiCategory key={category} category={category} items={items} />
             ))}
