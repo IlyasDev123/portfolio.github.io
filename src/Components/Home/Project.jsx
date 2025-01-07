@@ -61,7 +61,7 @@ const Projects = () => {
               <div className="flex justify-center space-x-4 mt-4">
                 <button
                   onClick={() => handleMoreDetails(project)}
-                  className="px-4 py-2 text-sm text-white bg-teal-500 hover:bg-teal-600 rounded shadow-md transition duration-200"
+                  className="bg-gradient-to-r from-sky-500 via-sky-600 to-sky-700 text-white px-6 py-2 rounded-lg shadow-lg transition duration-300 hover:from-sky-600 hover:via-sky-700 hover:to-sky-800 hover:shadow-xl"
                 >
                   More Details
                 </button>
@@ -69,7 +69,8 @@ const Projects = () => {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 text-sm text-white bg-blue-600 hover:bg-blue-700 rounded shadow-md transition duration-200"
+                   className="bg-gradient-to-r from-blue-600  via-blue-600 to-blue-700 text-white px-6 py-2 rounded-lg shadow-lg transition duration-300 hover:from-blue-600 hover:via-blue-700 hover:to-blue-800 hover:shadow-xl"
+
                 >
                   View Project
                 </a>

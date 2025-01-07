@@ -12,50 +12,13 @@ const Header = () => {
           </Link>
         </h1>
 
-        {/* Navigation Menu */}
-        <nav aria-label="Main Navigation" className="hidden md:block">
-          <ul className="flex space-x-6 text-sm md:text-base font-medium">
-            <li>
-              <Link
-                to="/"
-                className="hover:text-yellow-300 transition duration-300"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="#blog"
-                className="hover:text-yellow-300 transition duration-300"
-              >
-                Blog
-              </Link>
-            </li>
-          </ul>
-        </nav>
-
-        {/* Mobile Navigation Menu */}
-        <div className="block md:hidden">
-          <button
-            type="button"
-            className="text-yellow-300 hover:text-white transition duration-300 focus:outline-none"
-            aria-label="Open Navigation Menu"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
-            </svg>
-          </button>
+        {/* Profile Image */}
+        <div className="block">
+          <img
+            src="../../images/profile.jpeg" // Replace with the correct high-resolution image path
+            alt="Profile"
+            className="h-16 w-16 rounded-full border-4 border-white shadow-lg hover:scale-105 transition-transform duration-300 object-cover"
+          />
         </div>
       </div>
     </header>

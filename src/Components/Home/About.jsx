@@ -9,19 +9,21 @@ const Section = ({ id, title, description }) => {
           {description}
         </p>
         <div className="flex justify-center space-x-6 mt-8">
+          {/* GitHub Button */}
           <a
             href="https://github.com/IlyasDev123"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-600 text-white px-6 py-2 rounded-lg shadow-lg transition duration-300 hover:bg-blue-700 hover:shadow-xl"
+            className="bg-gradient-to-r from-sky-400 via-sky-400 to-sky-400 text-white px-6 py-2 rounded-lg shadow-lg transition duration-300 hover:from-sky-400 hover:via-sky-500 hover:to-sky-600 hover:shadow-xl"
           >
             GitHub
           </a>
+          {/* LinkedIn Button */}
           <a
             href="https://www.linkedin.com/in/muhammad-ilyas-873a17178?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gray-800 text-white px-6 py-2 rounded-lg shadow-lg transition duration-300 hover:bg-gray-900 hover:shadow-xl"
+            className="bg-gradient-to-r from-blue-700  via-blue-700 to-blue-700 text-white px-6 py-2 rounded-lg shadow-lg transition duration-300 hover:from-blue-600 hover:via-blue-700 hover:to-blue-800 hover:shadow-xl"
           >
             LinkedIn
           </a>

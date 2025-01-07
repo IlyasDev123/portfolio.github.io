@@ -7,19 +7,19 @@ const Skills = () => {
   const skillsData = [
     { name: "Laravel", years: 5 },
     { name: "PHP", years: 2 },
-    { name: "Node.js", years: 0.6 },
+    { name: "Node.js", years: 0.5 },
     { name: "HTML", years: 2 },
     { name: "CSS", years: 1 },
     { name: "JavaScript", years: 1 },
     { name: "React.js", years: 1 },
     { name: "Vue.js", years: 1.5 },
     { name: "AngularJS", years: 1 },
-    { name: "TailwindCSS", years: 0.6 },
+    { name: "TailwindCSS", years: 0.4 },
     { name: "Bootstrap", years: 2 },
     { name: "Git", years: 2 },
     { name: "Mysql", years: 3 },
-    { name: "Firebase", years: 0.6 },
-    { name: "MongoDB", years: 0.6 },
+    { name: "Firebase", years: 0.3 },
+    { name: "MongoDB", years: 0.3 },
   ];
 
   const thirdPartyAPIs = {
@@ -28,11 +28,11 @@ const Skills = () => {
     pushNotifications: ["Firebase", "One Signal"],
     messages: ["Twilio", "WhatsApp"],
     IntegrationTools: ["Acuity", "Zapier"],
+    
   };
 
   const serverManagement = {
-    dedicatedHosting: ["AWS", "AWS S3", "Digital Ocean"],
-    sharedHosting: ["GoDaddy", "NameCheap", "WHM"],
+    hostingPlatforms: ["AWS", "S3", "Digital Ocean", "GoDaddy", "NameCheap", "WHM", "Hostinger"],
   };
 
   return (
@@ -71,14 +71,9 @@ const Skills = () => {
           <h3 className="text-3xl font-semibold text-gray-800 mb-8">
             Server Management
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
             <HostingCategory
-              title="Dedicated Hosting"
-              items={serverManagement.dedicatedHosting}
-            />
-            <HostingCategory
-              title="Shared Hosting"
-              items={serverManagement.sharedHosting}
+              items={serverManagement.hostingPlatforms}
             />
           </div>
         </div>

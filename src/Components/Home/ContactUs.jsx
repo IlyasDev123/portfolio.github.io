@@ -2,13 +2,13 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <div className="py-20 bg-gradient-to-r from-blue-50 to-teal-50" id="contact">
+    <div className="py-20 bg-white-100" id="contact">
       <div className="container mx-auto px-6 lg:px-16">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-extrabold text-gray-800 mb-4">Contact Us</h2>
+          <h2 className="text-4xl font-extrabold text-gray-800 mb-4">Get in Touch</h2>
           <p className="text-lg text-gray-600">
-            We're here to help! Reach out to us via WhatsApp or email, and we'll get back to you as soon as possible.
+            Have questions or need assistance? Reach out to us via WhatsApp or email, and we'll respond as soon as possible!
           </p>
         </div>
 
